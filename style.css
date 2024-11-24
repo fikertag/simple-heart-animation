@@ -1,0 +1,35 @@
+body{
+  background-color: black;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+span{
+  
+  background-image: url("valentine-heart-icon-6.png");
+  
+  position: absolute;
+  background-size: cover;
+  top: var(--y);
+  left: var(--x);
+  transform: translate(-50%,-50%);
+  pointer-events: none;
+  animation: anime 7s linear;
+}
+@keyframes anime {
+  0%{
+    transform: translate(-50%,-50%);
+    rotate: (0deg);
+    filter: hue-rotate(0);
+  }
+ 
+  100%{
+    transform: translate(-5000%,-50px);
+    filter: hue-rotate(721deg);
+    
+  }
+  
+}
+
+
